@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mood Lana Del Rey</title>
+    <style>
+
+        .sidepanel  {
+          width: 0;
+          position: fixed;
+          height: 100000px;
+          top: 0;
+          left: 0;
+          background-color: #992ed6;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 380px;
+        }
+        
+        .sidepanel a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #000000;
+          display: block;
+          transition: 0.3s;
+        }
+        
+        .sidepanel a:hover {
+          color: #f1f1f1;
+        }
+        
+        .sidepanel .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+        }
+        
+        .openbtn {
+          font-size: 20px;
+          cursor: pointer;
+          background-color: #992ed6;
+          color: rgb(0, 0, 0);
+          padding: 10px 15px;
+          border: none;
+        }
+        
+        .openbtn:hover {
+          background-color:#ee83e5;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size:80px;">Mood Lana Del Rey</h1>
+
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index2.html">news and a little biography</a>
+        <a href="index3.html">content for your listening experience </a>
+        <a href="https://open.spotify.com/artist/00FQb4jTyendYWaN8pK0wa?autoplay=true>"> Spotify  </a>
+        <a href="https://music.apple.com/ua/artist/lana-del-rey/464296584"> Apple music  </a>
+        
+      </div>
+      
+      <button class="openbtn" onclick="openNav()">☰ More</button>  
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+      }
+      </script>
+
+    
+    <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2018%2F01%2Fgettyimages-686394646-2000.jpg">
+    <input class="favorite styled" type="button" value="Click if you love Lana Del Rey" />
+
+    <form> 
+        <div>
+            <input type="text" value="" placeholder="Enter your name please" id="input-text">
+            <input type="password" value="" placeholder="password">
+            <input type="number" value="" placeholder="Enter you age">
+
+        </div>
+        
+    </form>
+
+    <fieldset>
+        <legend>Which feelings do you have?</legend>
+      
+        <div>
+          <input type="radio" id="all together" name="feelings" value="all together" checked />
+          <label for="all together">All together</label>
+        </div>
+      
+        <div>
+          <input type="radio" id="joy and/or love" name="feelings" value="joy and/or love" />
+          <label for="joy and/or love">Joy and/or love</label>
+        </div>
+      
+        <div>
+          <input type="radio" id="sadness and/or indifference " name="feelings" value="sadness and/or indifference " />
+          <label for="sadness and/or indifference ">Sadness and/or indifference </label>
+        </div>
+      </fieldset>
+
+
+      <fieldset>
+        <legend>choose the albums you think are the best</legend>
+      
+        <div>
+          <input type="checkbox" id="honeymoon" name="honeymoon" checked />
+          <label for="honeymoon">Honeymoon</label>
+        </div>
+      
+        <div>
+          <input type="checkbox" id="lust for life" name="lust for life" />
+          <label for="lust for life">Lust for life</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="norman fucking rockwell!" name="norman fucking rockwell" />
+            <label for="norman fucking rockwell">Norman fucking rockwell</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="Chemtrails over the country club" name="Chemtrails over the country club" />
+            <label for="Chemtrails over the country club">Chemtrails over the country club</label>
+          </div>
+
+
+          <div>
+            <input type="checkbox" id="Blue Banisters" name="Blue Banisters" />
+            <label for="Blue Banisters">Blue Banisters</label>
+          </div>
+
+
+          <div>
+            <input type="checkbox" id="Did you know that there's a tunnel under Ocean Blvd" name="Did you know that there's a tunnel under Ocean Blvd" />
+            <label for="Did you know that there's a tunnel under Ocean Blvd">Did you know that there's a tunnel under Ocean Blvd</label>
+          </div>
+
+      </fieldset>
+
+    <form>
+        <label for="favSong">What is your favourite song?</label>
+        <input type="text" id="favSong" name="favSong"><br><br>
+
+        <label for="uniqueness">What do you think makes Lana Del Rey unique in the world of music?</label>
+        <input type="text" id="uniqueness" name="uniqueness"><br><br>
+
+
+        <input type="button" value="Send your answers" onclick="displayAnswers()">
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>1.fav song</th>
+                <th>2.Lana's uniqueness in this world</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr id="answersRow">
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function displayAnswers() {
+            var favSong = document.getElementById("favSong").value;
+            var uniqueness = document.getElementById("uniqueness").value;
+            var answersRow = document.getElementById("answersRow");
+
+            answersRow.children[0].textContent = favSong;
+            answersRow.children[1].textContent = uniqueness;
+        }
+    </script>
+
+        <div class="footer">If you like this site you can find us in tik tok @... and if you have
+            some wishes or propositions for us, please write on this email @... 
+          </div>
+    
+</body>
+</html>
+
+
+
+ 

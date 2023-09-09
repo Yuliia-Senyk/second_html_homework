@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Listening experience</title>
+
+    <style>
+
+        .sidepanel  {
+          width: 0;
+          position: fixed;
+          height: 100000px;
+          top: 0;
+          left: 0;
+          background-color: #992ed6;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 380px;
+        }
+        
+        .sidepanel a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #000000;
+          display: block;
+          transition: 0.3s;
+        }
+        
+        .sidepanel a:hover {
+          color: #f1f1f1;
+        }
+        
+        .sidepanel .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+        }
+        
+        .openbtn {
+          font-size: 20px;
+          cursor: pointer;
+          background-color: #992ed6;
+          color: rgb(0, 0, 0);
+          padding: 10px 15px;
+          border: none;
+        }
+        
+        .openbtn:hover {
+          background-color:#ee83e5;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size:80px;">Content for your listening experience</h1>
+
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index1.html">Main page</a>
+        <a href="index2.html">News and a little biography</a>
+        <a href="https://open.spotify.com/artist/00FQb4jTyendYWaN8pK0wa?autoplay=true>"> Spotify  </a>
+        <a href="https://music.apple.com/ua/artist/lana-del-rey/464296584"> Apple music  </a>  
+    </div>
+      
+      <button class="openbtn" onclick="openNav()">☰ More</button>  
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+      }
+      </script>
+
+
+    <img src="https://i.pinimg.com/564x/e2/aa/b4/e2aab4a2be7ab3fa0509b82fcdc88e11.jpg">
+    <img src="https://i.pinimg.com/564x/47/30/35/473035e47ff175ba1cf0b53e9bd94205.jpg">
+    <img src="https://i.pinimg.com/564x/15/79/c8/1579c81b42ed6b3a86b03d8012dd91ce.jpg">
+    <img src="https://i.pinimg.com/564x/e3/27/74/e3277440f14092d82889055c39ca7c79.jpg" width="200" height="350">
+
+
+    <h1 style="font-size:40px;">Here you can listen top 3 songs on our opinion: </h1>
+    <h2 >1.Carmen</h2>
+
+    <audio controls>
+        <source src="/home/nastia/Downloads/Lana Del Rey - Carmen [vzvuke.net].mp3" type="audio/mpeg">
+    </audio>
+
+    <h2>2.When The World Was at War We Kept Dancing</h2>
+
+    <audio controls>
+        <source src="/home/nastia/Downloads/Lana Del Rey - When The World Was At War We Kept Dancing.mp3" type="audio/mpeg">
+    </audio>
+
+    <h2>3.Season Of The Witch</h2>
+
+    <audio controls>
+        <source src="/home/nastia/Downloads/Lana Del Rey - Season Of The Witch.mp3" type="audio/mpeg">
+    </audio>
+    
+    <h1 style="font-size:40px;">Lana's the most popular song</h1>
+    <iframe width="420" height="315"
+        src="https://www.youtube.com/embed/TdrL3QxjyVw">
+    </iframe>
+    
+    <div class="footer">If you like this site you can find us in tik tok @... and if you have
+        some wishes or propositions for us, please write on this email @... 
+    </div>
+
+
+</body>
+</html>
